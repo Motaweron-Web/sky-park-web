@@ -46,7 +46,7 @@ $(document).ready(function () {
     breakpoints: {
       0: {
         slidesPerView: 1,
-      },  
+      },
       640: {
         slidesPerView: 1,
       },
@@ -54,7 +54,7 @@ $(document).ready(function () {
         slidesPerView: 2,
       },
     },
-    
+
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -108,6 +108,10 @@ $(document).ready(function () {
       logoCarousel.slideTo(index);
     }
   });
+  // goBack
+  function goBack() {
+    window.history.back();
+  }
 
   //WOW js
   new WOW().init();

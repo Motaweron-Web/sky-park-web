@@ -97,6 +97,12 @@ img {
           box-shadow: none;
 }
 
+content {
+  min-height: 90vh;
+  position: relative;
+  display: block;
+}
+
 .bg-gradient-primary {
   background-image: url(../img/waves-white.svg), linear-gradient(45deg, #0080a4, #a6c64c);
   background-size: cover;
@@ -1072,5 +1078,149 @@ img {
   background-color: #0080a4;
   color: #fff;
   border: 1px solid #0080a4;
+}
+
+.mainBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 0 50px 50px;
+  padding: 150px 30px 100px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+  background-image: linear-gradient(45deg, #008b5190, #00529690), url(../img/sky.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-animation: sky 100s infinite;
+          animation: sky 100s infinite;
+}
+
+@-webkit-keyframes sky {
+  0% {
+    background-position: right bottom;
+  }
+  100% {
+    background-position: left top;
+  }
+}
+
+@keyframes sky {
+  0% {
+    background-position: right bottom;
+  }
+  100% {
+    background-position: left top;
+  }
+}
+
+.mainBanner .Back {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #a6c64c;
+  color: #ffffff;
+  border-radius: 100%;
+  margin-right: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+  border: none;
+}
+
+.mainBanner .Back:hover {
+  background-color: #292929;
+  color: #FFD700;
+}
+
+.mainBanner ul {
+  margin: 0;
+  list-style: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 0;
+}
+
+.mainBanner ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 10px;
+  color: #a6c64c;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.mainBanner ul li a {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.mainBanner ul li a:hover {
+  color: #a6c64c;
+}
+
+.mainBanner ul li a.active {
+  color: #a6c64c;
+  cursor: default;
+}
+
+.mainBanner ul li::after {
+  content: " / ";
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  right: -3px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.mainBanner ul li:last-child:after {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mainBanner {
+    margin: 0px 0px 30px;
+    padding: 10px 10px;
+  }
+  .mainBanner .Back {
+    margin-right: 20px;
+  }
+  .mainBanner ul li a {
+    font-size: 16px;
+  }
+}
+
+.aboutUsPage {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.aboutUsPage .title {
+  font-family: 'Forrest';
+}
+
+.aboutUsPage p {
+  color: #999999;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */
