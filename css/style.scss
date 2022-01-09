@@ -102,11 +102,13 @@ img {
 .btn:focus {
     box-shadow: none;
 }
-content{
+
+content {
     min-height: 90vh;
     position: relative;
     display: block;
 }
+
 /////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -486,7 +488,6 @@ content{
     margin-bottom: 20px;
     font-style: italic;
 
-
     @media (max-width: 767px) {
         font-size: 40px;
         line-height: 30px;
@@ -500,9 +501,7 @@ content{
 
         // .title{
         //     font-family: 'Forrest';
-
         // }
-
         p {
             color: #999999;
             margin: 30px 0 20px;
@@ -754,18 +753,13 @@ content{
                 background-color: #fff;
                 border-color: $mainColor $mainColor #fff;
             }
-
-
-
         }
-
     }
 
     .tab-content {
         padding: 40px 10px;
         border: 1px solid;
         border-color: #fff $mainColor $mainColor;
-
     }
 
     .offer {
@@ -784,7 +778,6 @@ content{
                 object-fit: cover;
                 object-position: right top;
                 transition: .5s ease-in-out all;
-
             }
         }
 
@@ -793,7 +786,6 @@ content{
             margin: 30px 0 20px;
             color: $thirdColor;
             text-transform: uppercase;
-
         }
 
         p {
@@ -811,21 +803,17 @@ content{
 
             .offerImg {
                 img {
-
                     object-position: left bottom;
                     transition: 2s ease-in-out all;
-
                 }
             }
         }
     }
 }
 
-
 [data-fancybox] {
     cursor: zoom-in;
 }
-
 
 .prices {
     margin: 30px 0;
@@ -845,12 +833,7 @@ content{
         height: 100%;
         object-fit: contain;
     }
-
 }
-
-
-
-
 
 .footer {
     position: relative;
@@ -868,7 +851,6 @@ content{
             color: $mainColor;
         }
     }
-
 
     .container {
         margin: 0px auto;
@@ -920,8 +902,6 @@ content{
             li {
                 display: inline-block;
                 padding: 10px;
-
-
             }
         }
     }
@@ -961,22 +941,7 @@ content{
         }
     }
 }
-
-
-
-.contact {
-    padding: 30px 0 70px;
-
-    .map {
-        iframe {
-            width: 100%;
-            height: 450px;
-            border-radius: 20px;
-            box-shadow: $BigShadow;
-        }
-    }
-
-    .titleTow {
+ .titleTow {
         margin: 30px 0;
         position: relative;
         font-size: larger;
@@ -997,6 +962,19 @@ content{
             border-radius: 100%;
         }
     }
+.contact {
+    padding: 30px 0 70px;
+
+    .map {
+        iframe {
+            width: 100%;
+            height: 450px;
+            border-radius: 20px;
+            box-shadow: $BigShadow;
+        }
+    }
+
+   
 
     .info {
         margin: 0;
@@ -1010,7 +988,6 @@ content{
                 margin: 0;
             }
 
-
             .icon {
                 width: 100%;
                 height: 100%;
@@ -1023,7 +1000,6 @@ content{
                 border-radius: 100px;
                 border: 1px solid #979797;
                 transition: .3s ease-in-out;
-
                 // &:hover {
                 //   
                 // }
@@ -1039,16 +1015,12 @@ content{
                         background-color: $secondColor;
                         color: #fff;
                         border: 1px solid $secondColor;
-
                     }
                 }
             }
-
-
         }
     }
 }
-
 
 .mainBanner {
     display: flex;
@@ -1061,8 +1033,8 @@ content{
     background-size: cover;
     background-attachment: fixed;
     animation: sky 100s infinite;
-    @keyframes sky {
 
+    @keyframes sky {
         0% {
             background-position: right bottom;
         }
@@ -1070,7 +1042,6 @@ content{
         100% {
             background-position: left top;
         }
-
     }
 
     .Back {
@@ -1158,16 +1129,108 @@ content{
     }
 }
 
-.aboutUsPage{
+.aboutUsPage {
     padding: 50px 0;
     text-align: center;
-    .title{
-        font-family: 'Forrest';
 
+    .title {
+        font-family: 'Forrest';
     }
 
-    p{
+    p {
         color: #999999;
         margin-bottom: 30px;
     }
+}
+
+.counter {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 20px 0;
+
+    .counterBox {
+        background-image: url(../img/pattern-lines.svg), linear-gradient(45deg, #4cc67d, #4cbbc6);
+        background-size: cover;
+        padding: 50px;
+        border-radius: 5px;
+
+        .counterItem {
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            .icon {
+                display: inline-flex;
+                padding: 10px;
+
+                i {
+                    display: inline-block;
+                    height: 70px;
+                    width: 70px;
+                    line-height: 70px;
+                    font-size: 35px;
+                    background-color: #ffffff40;
+                    color: $white-color;
+                    text-align: center;
+                    transition: $transition;
+                    border-radius: 2px;
+                }
+            }
+
+            .info {
+                display: inline-block;
+
+                h3 {
+                    font-size: 36px;
+                    margin-bottom: 0;
+                    color: $white-color;
+                    font-weight: 500;
+                    font-family: 'Forrest';
+                    font-weight: bold;
+
+                    .sign-icon {
+                        font-size: 36px;
+                        position: relative;
+                    }
+                }
+
+                p {
+                    color: $white-color;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+.philosophy{
+    padding: 70px 0;
+    margin: 40px 0;
+    background-color: #f7f7f7;
+
+    .philosophyInfo{
+        p{
+            color: #6e6e6e;
+        }
+    }
+    .video{
+        padding: 20px;
+        video{
+            border-radius: 10px ;
+            box-shadow: $BigShadow;
+        }
+    }
+}
+
+.challenging{
+    padding: 70px 0;
+
+    p{
+        color: #6e6e6e;
+    }
+}
+p{
+    line-height: 32px;
 }
