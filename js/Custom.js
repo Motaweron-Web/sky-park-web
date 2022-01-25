@@ -1,17 +1,24 @@
 $(document).ready(function () {
+
+  // odometer
+  $('.odometer').appear(function (e) {
+    var odo = $(".odometer");
+    odo.each(function () {
+      var countNumber = $(this).attr("data-count");
+      $(this).html(countNumber);
+    });
+  });
+  
   //navbar animation
   $(window).scroll(function () {
     var appScroll = $(document).scrollTop();
-
     if ((appScroll > 60) && (appScroll < 99999999999)) {
       $(".navbar").addClass("animatedNav");
-
     };
     if ((appScroll > 0) && (appScroll < 60)) {
       $(".mainNav").removeClass("animatedNav");
     };
   });
-
   //MainSlider
   var swiper = new Swiper('.MainSlider-container', {
     spaceBetween: 0,
@@ -54,12 +61,10 @@ $(document).ready(function () {
         slidesPerView: 2,
       },
     },
-
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-
   });
   // 3D Card
   const myAtropos = Atropos({
@@ -76,7 +81,6 @@ $(document).ready(function () {
     onLeave() {},
     onRotate(x, y) {}
   });
-
   //  Carousel
   const logoCarousel = new Carousel(document.querySelector("#logoCarousel"), {
     friction: 0.83,
@@ -108,12 +112,6 @@ $(document).ready(function () {
       logoCarousel.slideTo(index);
     }
   });
-  // goBack
-  function goBack() {
-    window.history.back();
-  }
-
   //WOW js
   new WOW().init();
-
 });

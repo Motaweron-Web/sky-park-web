@@ -1379,7 +1379,8 @@ p {
   position: relative;
 }
 
-.form-search .form-group, .form-search .form-control {
+.form-search .form-group,
+.form-search .form-control {
   width: 100%;
 }
 
@@ -2499,5 +2500,35 @@ p {
 
 .book-stay .title {
   font-family: 'Forrest';
+}
+
+.billTitle {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bold;
+}
+
+.book-stay .multisteps-form__progress-btn {
+  text-transform: capitalize;
+}
+
+.book-stay
+.font-weight-bolder {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 10px 10px 20px;
+}
+
+.book-stay .paymentMethods .btn span {
+  color: #292929;
 }
 /*# sourceMappingURL=style.css.map */
