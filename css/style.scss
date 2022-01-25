@@ -171,6 +171,7 @@ content {
     backdrop-filter: blur(2px);
     transition: $transition;
 
+
     .navbar-brand {
         padding: 0;
 
@@ -214,6 +215,23 @@ content {
 
                 &::after {
                     width: 100%;
+                }
+            }
+        }
+    }
+
+    @media (max-width:768px) {
+        background-color: $white-color;
+        box-shadow: $BigShadow;
+    
+        .nav-item {
+            .nav-link {
+                color: $thirdColor;
+    
+                &.active,
+                &:hover,
+                &:focus {
+                    color: $mainColor;
                 }
             }
         }

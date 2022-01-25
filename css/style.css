@@ -209,6 +209,20 @@ content {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .mainNav {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 10px 30px #00000030;
+            box-shadow: 0px 10px 30px #00000030;
+  }
+  .mainNav .nav-item .nav-link {
+    color: #073b44;
+  }
+  .mainNav .nav-item .nav-link.active, .mainNav .nav-item .nav-link:hover, .mainNav .nav-item .nav-link:focus {
+    color: #a6c64c;
+  }
+}
+
 .animatedNav {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 10px 30px #00000030;
